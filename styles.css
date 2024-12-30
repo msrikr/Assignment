@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 0.5rem;
+    flex: 1 1 30%; /* Default: take equal space */
+}
+
+.menu-item h2 {
+    background-color: #f4f4f4;
+    text-align: right;
+    padding: 0.5rem;
+}
+
+/* Tablet View */
+@media (max-width: 991px) {
+    .menu-item {
+        flex: 1 1 45%; /* Adjust for two in a row */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .menu-item {
+        flex: 1 1 100%; /* Stack vertically */
+    }
+}
